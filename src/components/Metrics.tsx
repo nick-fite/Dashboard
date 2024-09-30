@@ -1,7 +1,7 @@
 import SideBar from "../Sidebar";
 import "../Page.css"
 import "./Metrics.css"
-import { LineChart} from "@mui/x-charts";
+import { LineChart, LineSeriesType} from "@mui/x-charts";
 import { useState } from "react";
 import { axisClasses, legendClasses } from "@mui/x-charts";
 
@@ -64,10 +64,11 @@ function Metrics()
         }
     };
     const [dataOutput, SetData] = useState<testType[]>();
-    const Lines = [{
+    const Lines:LineSeriesType[] = [{
         data: [1,3,3],
         curve: "linear",
         label: "ToBeRemoved",
+        type: 'line'
     }]; //making this a type causes issues when inputed into the chart. By making it generic we can trick it into working.
 
     FetchCSV(METRICS_CSV).then(str => {
@@ -78,7 +79,8 @@ function Metrics()
         Lines.push({
             data: elem.data,
             curve: "linear",
-            label: elem.label
+            label: elem.label,
+            type: "line"
         });
     });
     
