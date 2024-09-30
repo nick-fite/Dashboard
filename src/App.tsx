@@ -3,7 +3,6 @@ import './App.css'
 import './Page.css'
 import SideBar from './Sidebar'
 import ErrorPage from './components/error-page';
-import Dashboard from './components/Dashboard';
 import Metrics from './components/Metrics';
 import Customers from './components/Customers';
 import Products from './components/Products';
