@@ -3,7 +3,7 @@ import "../Page.css"
 import { useEffect, useState } from "react";
 import Customer, { CustomerDataType } from "../Customer";
 
-const CUSTOMER_CSV = "/TestCSV.csv";
+const CUSTOMER_CSV = "/Dashboard/TestCSV.csv";
 
 
 

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { axisClasses, legendClasses } from "@mui/x-charts";
 
 
-const METRICS_CSV = "/TestMetrics.csv";
+const METRICS_CSV = "/Dashboard/TestMetrics.csv";
 
 interface testType {
     label: string;
