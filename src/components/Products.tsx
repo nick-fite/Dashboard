@@ -5,37 +5,37 @@ import Product from "../Product";
 const DATA = [
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
     {
         imageLocation: "/Dashboard/vite.svg",
-        title: "sdf",
+        title: "Produt",
         sales: "1",
     },
 ]
