@@ -16,10 +16,10 @@ function SideBar()
               <img src={BlankProfile} id='ProfilePhoto'/>
               Profile Name
             </div>
-            <a href={`/Dashboard/dashboard`}> <button>Dashboard</button> </a>
-            <a href={`/Dashboard/customers`}> <button>Customers</button> </a>
-            <a href={`/Dashboard/products`}> <button>Products</button> </a>
-            <a href={`/Dashboard/calendar`}> <button>Calendar</button> </a>
+            <a href={`#/dashboard`}> <button>Dashboard</button> </a>
+            <a href={`#/customers`}> <button>Customers</button> </a>
+            <a href={`#/products`}> <button>Products</button> </a>
+            <a href={`#/calendar`}> <button>Calendar</button> </a>
           </nav>
     )
 }

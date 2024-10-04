@@ -1,7 +1,6 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import './App.css'
 import './Page.css'
-import SideBar from './Sidebar'
 import ErrorPage from './components/error-page';
 import Metrics from './components/Metrics';
 import Customers from './components/Customers';
@@ -18,24 +17,24 @@ const theme = createTheme({
   },
 });
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
-    element: <SideBar/>,
+    element: <Metrics/>,
     errorElement: <ErrorPage/>,
   },
   {
-    path: "Dashboard/dashboard",
+    path: "/dashboard",
     element: <Metrics/>,
     errorElement: <ErrorPage/>
   },
   {
-    path: "Dashboard/customers",
+    path: "/customers",
     element: <Customers/>,
     errorElement: <ErrorPage/>
   },
   {
-    path: "Dashboard/products",
+    path: "/products",
     element: <Products/>,
     errorElement: <ErrorPage/>
   },
