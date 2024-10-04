@@ -39,7 +39,7 @@ const router = createHashRouter([
     errorElement: <ErrorPage/>
   },
   {
-    path: "Dashboard/calendar",
+    path: "/calendar",
     element: <Calendar/>,
     errorElement: <ErrorPage/>
   },
