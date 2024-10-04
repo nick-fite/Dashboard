@@ -64,12 +64,7 @@ function Metrics()
         }
     };
     const [dataOutput, SetData] = useState<testType[]>();
-    const Lines:LineSeriesType[] = [{
-        data: [1,3,3],
-        curve: "linear",
-        label: "ToBeRemoved",
-        type: 'line'
-    }]; //making this a type causes issues when inputed into the chart. By making it generic we can trick it into working.
+    const Lines:LineSeriesType[] = []; 
 
     FetchCSV(METRICS_CSV).then(str => {
         SetData(() =>{ return ParseCSV(str)});
